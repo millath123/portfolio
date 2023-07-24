@@ -19,11 +19,11 @@ function validateName() {
 
 function validatephone() {
     var phone = document.getElementById('contact-phone').value;
-    if (name.length == 0) {
-        nameError.innerHTML = 'Phone no is requred'
+    if (phone.length == 0) {
+        phoneError.innerHTML = 'Phone no is requred'
     }
     if (phone.length !== 10) {
-        nameError.innerHTML = 'Enter 10 digits';
+        phone.innerHTML = 'Enter 10 digits';
         return false;
     }
     if (!phone.match(/^[0-9]{10}[A-Za-z]*$/)) {
